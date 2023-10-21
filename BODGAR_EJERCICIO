@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class PROYECTO19 { 
+                    public static void main(String[] args) {
+        Scanner Materia = new Scanner (System.in);
+        System.out.println("Universidad del sur ");
+        System.out.print("Ingresa nombre del alumno ");
+        String Alumno = Materia.next();
+        System.out.print("Calificacion de literatura, 1 parcial: "); 
+        int literatura = Materia.nextInt();
+        System.out.print("Calificacion de literatura, 2 parcial: ");
+        int literatura2 = Materia.nextInt();
+        System.out.print("Calificacion de matematicas, 1 parcial: ");
+        int matematicas = Materia.nextInt();
+        System.out.print("Calificacion de matematicas, 2 parcial: ");
+        int matematicas2 = Materia.nextInt();
+        System.out.print("Calificacion de programacion, 1 parcial: ");
+        int programacion = Materia.nextInt();
+        System.out.print("Calificacion de programacion, 2 parcial: ");
+        int programacion2 = Materia.nextInt();
+        long promedio = 0, promedio2 = 0, promedio3 = 0;
+        long general = 0;
+        promedio=(literatura + literatura2) / 2;
+        
+        promedio2=(matematicas + matematicas2) / 2;
+        
+        promedio3=(programacion + programacion2) / 2;
+        
+        general=(promedio + promedio2 + promedio3) / 3;
+        if (promedio >= 6){
+            System.out.println("Calificacion de literatura: " + promedio);
+         }else {
+            System.out.println("El alumno reprobo literatura: " + promedio);
+        } 
+        if(promedio2 >= 6) {
+            System.out.println("Calificacion matematicas: " + promedio2);
+       } else {
+            System.out.println("El alumno reprobo matematicas: " + promedio2);
+                    if (promedio3 >= 6) {
+                        System.out.println("Calificacion de programacion: " + promedio3);
+                      } else {
+                        System.out.println("El alumno reprobo programacion: " + promedio3);
+                    }
+                    System.out.println("El promedio general de todas las materias: " + general);
+            
+       
+       }
+    }        
+        
+        
+        
+         
+     }
